@@ -1,0 +1,10 @@
+name             'greg'
+maintainer       'Greg Cobb'
+maintainer_email 'gregmcobb@gmail.com'
+license          'MIT'
+description      ''
+version          '0.1.0'
+supports         'mac_os_x'
+
+depends          'sprout-base'
+depends          'sprout-homebrew'
