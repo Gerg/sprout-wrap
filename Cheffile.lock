@@ -9,9 +9,9 @@ SITE
       build-essential (>= 2.1.2)
     mingw (0.1.1)
       seven_zip (>= 0.0.0)
-    seven_zip (2.0.1)
+    seven_zip (2.0.2)
       windows (>= 1.2.2)
-    windows (1.42.0)
+    windows (1.44.3)
       chef_handler (>= 0.0.0)
 
 GIT
@@ -24,17 +24,26 @@ GIT
 GIT
   remote: https://github.com/pivotal-sprout/sprout-base
   ref: master
-  sha: 689f8b6d2a679c076cf41e8fc7ab3cda9617d4fd
+  sha: fe8719337275808d2a6a33b2d60561f36c2272a5
   specs:
     sprout-base (0.5.0)
       homebrew (>= 0.0.0)
 
 GIT
+  remote: https://github.com/pivotal-sprout/sprout-chruby
+  ref: master
+  sha: 0543912b5b654eb512a9ee24cc506a3991f07d58
+  specs:
+    sprout-chruby (0.1.0)
+      homebrew (>= 0.0.0)
+      sprout-base (>= 0.0.0)
+
+GIT
   remote: https://github.com/pivotal-sprout/sprout-git
   ref: master
-  sha: d50840b4510e5cdfda99bbbe04b9e3813176686c
+  sha: c3d87bc0268c8ed7438b1d67e26763cd3d061ed7
   specs:
-    sprout-git (0.2.1)
+    sprout-git (0.3.1)
       homebrew (>= 0.0.0)
       sprout-base (>= 0.0.0)
 
@@ -78,7 +87,7 @@ GIT
 GIT
   remote: https://github.com/pivotal-sprout/sprout-osx-settings
   ref: master
-  sha: 6e9b7100a450cb75a1f520bb8ec3db675b09a712
+  sha: 62630bea50cea7b24058854a5a216c3a4dbbe4ef
   specs:
     sprout-osx-settings (0.1.0)
       homebrew (>= 0.0.0)
@@ -92,15 +101,6 @@ GIT
   specs:
     sprout-postgresql (0.1.0)
       homebrew (>= 1.5.4)
-      sprout-base (>= 0.0.0)
-
-GIT
-  remote: https://github.com/pivotal-sprout/sprout-rbenv
-  ref: master
-  sha: ef38508a12ea3dfe06449ecbf82d98e7b75aeaa6
-  specs:
-    sprout-rbenv (0.1.0)
-      homebrew (>= 0.0.0)
       sprout-base (>= 0.0.0)
 
 GIT
@@ -120,20 +120,20 @@ GIT
       sprout-base (>= 0.0.0)
       sprout-osx-settings (>= 0.0.0)
 
-GIT
-  remote: https://github.com/pivotal-sprout/sprout-terminal
-  ref: master
-  sha: 6d9be928aa0041f455d3721b14c89c5e068f5e04
+PATH
+  remote: greg
   specs:
-    sprout-terminal (0.1.0)
-      osx (>= 0.0.0)
+    greg (0.1.0)
       sprout-base (>= 0.0.0)
+      sprout-homebrew (>= 0.0.0)
 
 DEPENDENCIES
   build-essential (= 3.2.0)
+  greg (>= 0)
   mingw (= 0.1.1)
   osx (>= 0)
   sprout-base (>= 0)
+  sprout-chruby (>= 0)
   sprout-git (>= 0)
   sprout-homebrew (>= 0)
   sprout-jetbrains-editors (>= 0)
@@ -141,8 +141,6 @@ DEPENDENCIES
   sprout-osx-apps (>= 0)
   sprout-osx-settings (>= 0)
   sprout-postgresql (>= 0)
-  sprout-rbenv (>= 0)
   sprout-ruby (>= 0)
   sprout-ssh (>= 0)
-  sprout-terminal (>= 0)
 
