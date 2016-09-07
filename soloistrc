@@ -23,20 +23,9 @@ recipes:
 - sprout-git::git_duet
 - sprout-git::projects
 
-# development::ruby
-- sprout-jetbrains-editors::rubymine
-- sprout-chruby
-- sprout-ruby
-
 # development::python
 - sprout-jetbrains-editors::pycharm
 
-# development::golang
-- sprout-osx-apps::go
-
-# development::db 
-- sprout-mysql
-- sprout-postgresql
 # local
 - greg
 
@@ -76,6 +65,7 @@ node_attributes:
         - node
         - pstree
         - python
+        - python3
         - qt
         - s3cmd
         - tmux
@@ -87,7 +77,6 @@ node_attributes:
         - firefox
         - flycut
         - google-chrome
-        - google-drive
         - google-hangouts
         - java
         - macvim
